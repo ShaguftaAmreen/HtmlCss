@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong num</title>
+</head>
+<body>
+    <script>
+        let num=1533;
+        let temp=num;
+        let sum=0;
+        while(num!=0){
+            let rev=Math.floor(num%10);
+            sum=sum+rev*rev*rev;
+            num=num/10;
+        }
+        num=temp;
+        if(num==sum){
+            document.write(`number is armstrong ${num}`);
+        }
+        else{
+            document.write(`number is not a armstrong ${num}`);
+        }
+    </script>
+</body>
+</html>

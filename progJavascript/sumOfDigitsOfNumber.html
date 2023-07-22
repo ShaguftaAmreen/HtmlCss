@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of digits of number</title>
+</head>
+<body>
+    <script>
+        let num=9898;
+        let sum=0;
+        while(num>0){
+let rev=Math.floor(num%10);
+sum=sum+rev;
+num=num/10;
+        }
+        document.write(sum);
+    </script>
+</body>
+</html>
